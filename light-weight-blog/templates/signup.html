@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %} Add new post {% endblock %}
+
+{% block content %}
+<div class="signup">
+<h1 class="entry-title">Signup</h1>
+<form method="post">
+	<table class="signup-table">
+	<tr>
+	<td><label>Username *</label></td>
+	<td><input type="text" name="username" value="{{username}}"></td>
+	<td><div class="error">{{username_error}}</div></td>
+	</tr>
+	<tr>
+	<td><label>Password *</label></td>
+	<td><input type="password" name="password"></td>
+	<td><div class="error">{{password_error}}</div></td>
+	</tr>
+	<tr>
+	<td><label>Password again *</label></td>
+	<td><input type="password" name="verify"></td>
+	<td><div class="error">{{verify_error}}</div></td>
+	</tr>
+	<tr>
+	<td><label>Email</label></td>
+	<td><input type="text" name="email" value="{{email}}"></td>
+	<td><div class="error">{{email_error}}</div></td>
+	</tr>
+	<tr><td></td>
+	<td>
+	<input type="submit">
+	</td>
+	<td></td>
+	</tr>
+	</table>
+	<p>Fields with (*) are required</p>
+</form>
+</div>
+{% endblock %}

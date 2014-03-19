@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %} Add new post {% endblock %}
+
+{% block content %}
+<div class="login">
+<h1 class="entry-title">Login</h1>
+<form method="post">
+	<table class="login-table">
+	<tr>
+	<td><label>Username</label></td>
+	<td><input type="text" name="username"></td>
+	</tr>
+	<tr>
+	<td><label>Password</label></td>
+	<td><input type="password" name="password"></td>
+	</tr>
+	<tr><td></td>
+	<td>
+	<input type="submit">
+	</td>
+	</tr>
+	</table>
+	<div class="error">{{loginerror}}</p>
+</form>
+</div>
+{% endblock %}

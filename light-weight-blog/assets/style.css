@@ -1,0 +1,225 @@
+/* 
+.main
+.main-wrapper
+
+.siteheader
+.site-title
+.site-description
+
+.site-nav
+.site-content
+
+.site-footer
+
+.entry-title
+
+.error
+
+input[type=text]
+textarea
+label
+body
+ */
+
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text);
+
+body {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    background-color: white;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4em;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    font-family: Crimson Text, Georgia, serif;
+    font-weight: normal;
+    margin: 30px 0px 10px 0px;
+    padding: 0;
+    color: black;
+}
+
+a {
+    color: #aa0000;
+    text-decoration: underline;
+}
+
+div.main {
+    width: 800px;
+    margin: 30px auto 0 auto;
+}
+
+div.main-wrapper {
+    float: left;
+    width: 100%;
+}
+
+.site-header {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.site-title {
+	font-family: Crimson Text, Georgia, serif;
+	font-weight: bold;
+	font-size: 36px;
+	margin: 15px 0px 10px 0px;
+	padding: 0;
+	color: black;
+}
+
+.site-description {
+	font-size: 15px;
+	color: #666;
+}
+
+.site-nav {
+	border-bottom: 1px solid #f4f4f4;
+	border-top: 1px solid #f4f4f4;
+}
+
+.site-nav a {
+	color: #333;
+	text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:active {
+	color: #999;
+	text-decoration: none;
+}
+
+.site-nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.site-nav ul li {
+	position: relative;
+	display: inline-block;
+	margin-right: 10px;
+	margin: 10px 0;
+	padding: 0 15px;
+	max-height: 20px;
+	font-size: 15px;
+	border-right: 1px solid #ddd;
+}
+
+.site-nav ul li:first-child {
+	padding-left: 0;
+}
+
+.site-nav ul li:last-child {
+	border-right: none;
+}
+
+.entry-title {
+	font-family: Crimson Text, Georgia, serif;
+	font-weight: bold;
+	font-size: 28px;
+	margin: 15px 0px 10px 0px;
+	padding: 0;
+	color: black;
+	text-align: center;
+}
+
+.post-list ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.post-list ul li {
+	padding: 10px 0 40px 0;
+	border-bottom: 1px dashed #eee;
+	clear: both;
+}
+
+.home-title {
+	margin-top: 0;
+	margin-bottom: 0;
+	float: left;
+}
+
+span.entry-home-date {
+	float: right;
+}
+
+.entry-meta {
+	text-align: center;
+	font-size: 15px;
+	color: #666;
+}
+
+.footer-meta {
+	font-size: 12px;
+}
+
+.site-footer {
+	font-size: 12px;
+	text-align: center;
+	border-top: 1px solid #f4f4f4;
+	padding: 10px 0;
+	margin-top: 30px;
+}
+
+.entry-content {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+.error {
+	color: red;
+}
+
+label {
+	display: block; font-size: 20px;
+}
+
+.entry-create-post input[type=text] {
+	width: 80%; font-size: 20px; padding: 2px;
+}
+
+.entry-create-post textarea {
+	width: 80%; height: 500px; font-size: 17px; font-family: monospace;
+}
+
+input[type=submit] {
+	font-size: 24px;
+}
+
+.signup input,
+.login input {
+	width: 200px; font-size: 20px; padding: 2px;
+}
+
+.signup input[type=submit],
+.login input[type=submit] {
+	width: 100px;
+}
+
+.signup-table,
+.login-table {
+	margin-top: 20px;
+}
+
+.top-notify {
+	float: right;
+	background: #f4f4f4;
+	padding: 10px;
+	margin: -30px;
+	font-size: 14px;
+}
+
+.center {
+	text-align: center;
+	}

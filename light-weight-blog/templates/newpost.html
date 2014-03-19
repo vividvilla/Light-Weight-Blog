@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %} Add new post {% endblock %}
+
+{% block content %}
+<div class="entry-create-post">
+<h1 class="entry-title">Create New Post</h1>
+<div class="error">{{error}}</div>
+<form method="post">
+<label>
+<h4>Post Title (required)</h4>
+<input type="text" name="subject" value="{{title}}">
+</label>
+<label>
+<h4>Post Content (required)</h4>
+<textarea name="content">{{content}}</textarea>
+</label>
+<input type="submit">
+</form>
+</div>
+{% endblock %}

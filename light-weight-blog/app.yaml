@@ -9,9 +9,39 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: .*
+- url: /assets
+  static_dir: assets
+
+- url: /
   script: main.app
+
+- url: /welcome/?
+  script: main.app
+
+- url: /signup/?
+  script: auth.app
+
+- url: /login/?
+  script: auth.app
+
+- url: /logout/?
+  script: utils.app
+  
+- url: /blog/?.*
+  script: post.app
+
+- url: /newpost/?
+  script: post.app
+  
+- url: /.*
+  script: utils.app
 
 libraries:
 - name: webapp2
   version: "2.5.2"
+
+- name: jinja2                                                                  
+  version: latest                                                               
+
+- name: markupsafe                                                              
+  version: latest

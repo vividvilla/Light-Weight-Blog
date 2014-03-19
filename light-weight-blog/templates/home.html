@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+<h1 class="entry-title">Recent Articles</h1>
+{% for post in allposts %}
+<div class="post-list">
+<ul>
+<li><h3 class="home-title"><a href="blog/{{post.key().id_or_name()}}">{{post.title}}</a></h3><span class="entry-home-date">{{post.date_published.strftime('%d, %b %Y')}}</span></li>
+</ul>
+</div>
+{% endfor %}
+{% endblock %}
